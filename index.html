@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 75px;
+    }
+    .navitems2 {
+      background-color: rgb(8, 171, 235);
+      color: black;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 40%;
+      height: 100%;
+    }
+    .nav-items button {
+      height: 40px;
+      width: 140px;
+    }
+    .first-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url(./banner-bg.jpg);
+      width: 100vw;
+      height: 120vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: white;
+    }
+
+    .containerbox1{
+        width: 75%;
+        text-align: center;
+        
+    }
+    .containerbox1 h1{
+        font-size: 70px;
+        font-weight: 600;
+    }
+    .containerbox1 p{
+        margin-top: 50px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .button-box1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .button-box1 button{
+        height: 60px;
+        width: 220px;
+        margin-top: 60px;
+    }
+    .btn1{
+        border: 1px solid white;
+        font-size: 14px;
+        font-weight: 800;
+        border-radius: 15px;
+        background-color: rgba(0, 0, 0, 0.196);
+        color: white;
+    }
+    .btn2{
+        border: 0px solid white;
+        font-size: 14px;
+        font-weight: 800;
+        border-radius: 15px;
+        background-color: rgba(0, 0, 0, 0);
+        color: white;
+    }
+    .second-container{
+        width: 100vw;
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        top: -120px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .image-box2 img{
+        border-radius: 20px;
+    }
+    .inner-box3{
+        height: 50px;
+        padding: 1% 5%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .textbtn{height: 50px;
+        width: 200px;
+        border: 1px solid white;
+        font-size: 14px;
+        font-weight: 800;
+        border-radius: 15px;
+        background-color: rgb(19, 168, 243);
+        color: white;
+    }
+    .inner-box32{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 25px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .innerbox4{
+        width: 270px;
+        height: 400px;
+        border: 1px solid;
+        border-radius: 25px;
+    }
+   .icon1{
+     position: relative;
+     left:20px;
+     top:35px;
+
+   }
+   .nature{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    bottom:30px;
+    left:25px;
+   }
+   .number{
+    display: flex;
+    justify-content:center;
+    position: relative;
+    bottom:40px;
+    left:30px
+    
+   }
+   .popular1{
+    border-radius: 25px;
+    position:relative;
+    left:13px;
+   }
+   .browise{
+    border:2px solid blue;
+    width:210px;
+    position: relative;
+    left:25px;
+    top:30px
+    
+   }
+   .browise1{
+    border:2px solid blue;
+    width:220px;
+    position: relative;
+    left:20px;
+    top:30px
+    
+   }
+   
+
+   .fourth-container{
+    background-image: url(./closed-bg.jpg);
+    width: 100vw;
+    background-position: center;
+    background-size: contain;
+    text-align: center;
+    padding: 3% 0%;
+   }
+   .image-boxcon{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+   }
+   .image-box3 img{
+    border-radius: 20px;
+    height: 85%;
+    width: 100%;
+   }
+   .fifth-container{
+    width: 100vw;
+    text-align: center;
+   }
+   .inner-box5{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+
+   }
+   .innerbox5{
+    border: 1px solid;
+    width: 320px;
+    border-radius: 25px;
+   }
+   .lorem2{
+    text-decoration: line-through;
+   }
+   .footer{
+    border:2px solid blue;
+    text-align: center;
+    position: relative;
+    top:15px;
+    background-color: blue;
+    color:white;
+   }
+   .num{
+    position: relative;
+    right:100px
+   }
+   .num1{
+    position: relative;
+    bottom:50px;
+    left:100px;
+   }
+   .choose1{
+    border:2px solid blue;
+    width:150px;
+    margin-left: 80px;
+    border-radius: 8px;
+   }
+    
+    /* .browse{
+      position: relative;
+      bottom:1000px;
+      left:650px;
+      border:2px solid blue;
+      width:190px;
+      text-align: center;
+    }
+    
+    .our{
+      position: relative;
+      bottom:850px;
+      left:650px;
+    }
+    .photo{
+      position: relative;
+      bottom:850px;
+      left:430px;
+    }
+    .innerbox5{
+        width: 270px;
+        height: 560px;
+        border: 1px solid;
+        position: relative;
+        bottom:750px;
+        left:150px;
+    }
+    .innerbox6{
+        width: 270px;
+        height: 560px;
+        border: 1px solid;
+        position: relative;
+        bottom:500px;
+        left:460px;
+    }
+    .innerbox7{
+        width: 270px;
+        height: 560px;
+        border: 1px solid;
+        position: relative;
+        bottom:500px;
+        left:470px;
+    }
+    .basic{
+      position:relative;
+      left:80px;
+    }
+    .lorem1{
+      position:relative;
+      left:30px;
+    }
+    .lorem2{
+      position:relative;
+      top:-10px;
+      left:30px;
+      text-decoration: line-through;
+    }
+    .lorem3{
+      position:relative;
+      top:-10px;
+      left:30px;
+      text-decoration: line-through;
+    }
+    .doller1{
+      position: relative;
+      left:70px;
+    }
+    .choose1{
+      border:2px solid blue;
+      width:150px;
+      height:20px;
+      position: relative;
+      left:50px;
+      top:15px;
+      text-align: center;
+      border-radius: 6px;
+    } */
+
+    @media screen and (max-width:720px) {
+        .navitems2{
+            display: none;background-color: rgb(8, 171, 235);
+        }
+        .text-box1 h1{
+            font-size: 36px;
+        }
+        .inner-box3{
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            text-align: center;
+        }
+        .second-container{
+          position: relative;
+        top: -100px;
+        }
+        
+    }
+  </style>
+  <body>
+    <div class="body-container">
+      <div class="navbar">
+        <div class="nav-items">
+          <img
+            src="https://templatemo.com/templates/templatemo_576_snapx_photography/assets/images/logo.png"
+            alt=""
+          />
+        </div>
+        <div class="nav-items navitems2">
+          <div class="nav-item1">HOME</div>
+          <div class="nav-item1">PHOTOS & VIDEOS</div>
+          <div class="nav-item1">CATEGORIES</div>
+          <div class="nav-item1">USERS</div>
+        </div>
+        <div class="nav-items"><button type="button">SIGN-UP</button></div>
+      </div>
+      <div class="first-container">
+        <div class="containerbox1">
+          <div class="text-box1">
+            <h1>Enter a world of Photos & Amazing Awards</h1>
+            <hr />
+            <p>
+              SnapX Photography is a professional website template with 5
+              different HTML pages for maximum customizations. It is free for
+              commercial usage. This Bootstrap v5.1.3 CSS layout is provided by
+              TemplateMo Free CSS Templates.
+            </p>
+          </div>
+          <div class="button-box1">
+            <button class="btn1">Explore SnapX Contest</button>
+            <button class="btn2">Watch our video Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="second-container">
+        <div class="image-box2"><img src="./closed-03.jpg" alt=""></div>
+        <div class="image-box2"><img src="./featured-02.jpg" alt=""></div>
+        <div class="image-box2"><img src="./featured-03.jpg" alt=""></div>
+      </div>
+      <div class="third-container">
+        <div class="inner-box3">
+            <div class="text-box3">
+                <h3>OUR CATEGORIES<br>
+                Check Out Popular Contest Categories</h3>
+            </div>
+            <div class="text-box3">
+                <button type="button" class="textbtn">Discover all Categories</button>
+            </div>
+        </div>
+        <div class="inner-box32">
+            <div class="innerbox4">
+                <img class="icon1" src ="./icon-01.png">
+                 <h4 class="nature">Nature Pic Contest</h3>
+                <p class="number"><span style="color:blue";>126 </span> Available Contests</p>
+                <img class="popular1"src="./popular-01.png" height="150px">
+                <p class="browise"><span style="color:blue";>Browise Nature Pic Contests</span></p>
+            </div>
+            <div class="innerbox4">
+              <img class="icon1" src ="./icon-02.png">
+                 <h4 class="nature">Random Pic Contest</h3>
+                <p class="number"><span style="color:blue";>116 </span> Available Contests</p>
+                <img class="popular1"src="./popular-02.png" height="150px">
+                <p class="browise1"><span style="color:blue";>Browise Random Pic Contests</span></p>
+            </div>
+            <div class="innerbox4">
+              <img class="icon1" src ="./icon-03.png">
+                 <h4 class="nature">Portrait Pic Contest</h3>
+                <p class="number"><span style="color:blue";>164 </span> Available Contests</p>
+                <img class="popular1"src="./popular-03.png" height="150px">
+                <p class="browise1"><span style="color:blue";>Browise Portrait Pic Contests</span></p>
+            </div>
+            <div class="innerbox4">
+              <img class="icon1" src ="./icon-04.png">
+                 <h4 class="nature">Space Pic Contest</h3>
+                <p class="number"><span style="color:blue";>135 </span> Available Contests</p>
+                <img class="popular1"src="./popular-04.png" height="150px">
+                <p class="browise1"><span style="color:blue";>Browise Space Pic Contests</span></p>
+            </div>
+        </div>
+      </div>
+      <div class="fourth-container">
+        <p class="closed"><span style="color:blue";>Closed Photography Contests</span></p>
+        <h4 class="previous"><span style="color:blue";>Previous Contests With Handpicked Winners</span></h4>
+        <div class="image-boxcon">
+        <div class="image-box3"><img src="./closed-02.jpg" alt="">
+        <p class="num">96 participants<br><span style="color:rgb(183, 183, 182)";>Number of Artists</span></p>
+        <p class="num1">410 Pictures<br><span style="color:rgb(207, 209, 211)";>Submitted Pics</span></p>
+      </div>
+        <div class="image-box3"><img src="./closed-03.jpg" alt="">
+          <p class="num">25 participants<br><span style="color:rgb(183, 183, 182)";>Number of Artists</span></p>
+          <p class="num1">380 Pictures<br><span style="color:rgb(207, 209, 211)";>Submitted Pics</span></p></div>
+        <div class="image-box3"><img src="./closed-01.jpg" alt="">
+          <p class="num">56 participants<br><span style="color:rgb(183, 183, 182)";>Number of Artists</span></p>
+          <p class="num1">310 Pictures<br><span style="color:rgb(207, 209, 211)";>Submitted Pics</span></p></div>
+      </div>
+        <p class="browse"><span style="color:blue";>Browse Open Contests</span></p>
+      </div>
+      <div class="fifth-container">
+        <h5 class="our">OUR PRICING</h5>
+      <h2 class="photo">Photography<span style="color:blue";> Contest Plans</span> And Price<span style="color:blue";>Awards</span></h2>
+      <div class="inner-box5">
+        <div class="innerbox5">
+          <div class="price"><img class="pri" src="./pricing-01.jpg" >
+            <p class="basic"><b>Basic Plan</b></p><hr>
+            <p class="lorem1" style="color:blue">Lorem Ipsum Dolores Sonate <br><br>Songe Lorem Ipsum Dol <br><br> Matrios Venga Heptuss<br><br></p><p class="lorem2" style="color:rgb(175, 175, 173)">Denim Srirecha Kogi <br><br>Digital Photography Awards</p>
+            <h2 class="doller1" style="color:blue">$25 USD</h2>
+            <p class="choose1" style="color:blue">Choose This Plan</p>
+        </div></div>
+        <div class="innerbox5">
+          <div class="price"><img class="pri" src="./pricing-02.jpg" >
+            <p class="basic"><b>Standard Plan</b></p><hr>
+            <p class="lorem1" style="color:blue">Lorem Ipsum Dolores Sonate <br><br>Songe Lorem Ipsum Dol <br><br> Matrios Venga Heptuss<br><br>Denim Srirecha Kogi <br><br></p><p class="lorem2" style="color:rgb(153, 153, 151)">Digital Photography Awards</p>
+            <h2 class="doller1" style="color:blue">$25 USD</h2>
+            <p class="choose1" style="color:blue">Choose This Plan</p>
+
+        </div></div>
+        <div class="innerbox5">
+          <div class="price"><img class="pri" src="./pricing-03.jpg" >
+            <p class="basic"><b>advanced Plan</b></p><hr>
+            <p class="lorem1" style="color:blue">Lorem Ipsum Dolores Sonate <br><br>Songe Lorem Ipsum Dol <br><br> Matrios Venga Heptuss<br><br>Denim Srirecha Kogi <br><br>Digital Photography Awards</p>
+            <h2 class="doller1" style="color:blue">$25 USD</h2>
+            <p class="choose1" style="color:blue">Choose This Plan</p>  
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="footer">
+      <h4>Coppyright c 2048 SnapX Photo Contest Co,Ltd All Rights reserved.Design:TemplateMo</h4>
+
+    </div>
+  </div>
+  </body>
+</html>
